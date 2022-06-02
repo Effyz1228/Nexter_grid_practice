@@ -1,10 +1,34 @@
+//for overall feature layout
 .features{
     
     //grid-row: 2/3;
     grid-column: center-start/center-end;
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    //grid-template-columns: repeat(3,1fr);
+    //make featuer section responsive without media-query
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
     gap: 6rem;
     margin: 15rem 0;
+    align-items: start;
+}
+
+//for reuseable purpose
+.feature{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    row-gap: 1.5rem;
+    column-gap: 2.5rem;
+
+    &__icon{
+        fill: $color-primary;
+        height: 4.5rem;
+        width: 4.5rem;
+        //grid-row:1/-1 -1 doesn't work for implicit row, use span here!
+        grid-row: 1/span 2;
+        transform: translateY(-1rem);
+    }
+    &__text{
+        font-size: 1.7rem;
+    }
 }
