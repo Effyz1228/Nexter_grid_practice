@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
     gap: 7rem;
-
 }
 
 .home{
@@ -44,7 +43,6 @@
         transform: translateY(50%);
         width: 80%;
         justify-self: center;
-
     }
 
     &__location,
@@ -66,7 +64,6 @@
             width: 2rem;
             height: 2rem;
         }
-        p{}
     }
     &__btn{
         grid-column: 1/-1;
