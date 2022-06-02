@@ -1,0 +1,10 @@
+.features{
+    
+    //grid-row: 2/3;
+    grid-column: center-start/center-end;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 6rem;
+    margin: 15rem 0;
+}
